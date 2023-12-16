@@ -1,6 +1,6 @@
 [
     {
-        "id": "aecb097bb3b987bd",
+        "id": "29570d1df94e2809",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,9 +8,28 @@
         "env": []
     },
     {
-        "id": "ec85bcd1a25a3999",
+        "id": "75a89d90fbde1f95",
+        "type": "group",
+        "z": "29570d1df94e2809",
+        "name": "TEST ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0b14e0c72fbd7234",
+            "4006801a25601f96",
+            "582a66c2d648e55c"
+        ],
+        "x": 154,
+        "y": 159,
+        "w": 632,
+        "h": 82
+    },
+    {
+        "id": "0b14e0c72fbd7234",
         "type": "inject",
-        "z": "aecb097bb3b987bd",
+        "z": "29570d1df94e2809",
+        "g": "75a89d90fbde1f95",
         "name": "",
         "props": [
             {
@@ -32,14 +51,15 @@
         "y": 200,
         "wires": [
             [
-                "869c32ea27d7ffc6"
+                "4006801a25601f96"
             ]
         ]
     },
     {
-        "id": "869c32ea27d7ffc6",
+        "id": "4006801a25601f96",
         "type": "function",
-        "z": "aecb097bb3b987bd",
+        "z": "29570d1df94e2809",
+        "g": "75a89d90fbde1f95",
         "name": "function 1",
         "func": "let arr = [\"\"];\nreturn msg;",
         "outputs": 1,
@@ -52,14 +72,15 @@
         "y": 200,
         "wires": [
             [
-                "0320d1e565dddb08"
+                "582a66c2d648e55c"
             ]
         ]
     },
     {
-        "id": "0320d1e565dddb08",
+        "id": "582a66c2d648e55c",
         "type": "debug",
-        "z": "aecb097bb3b987bd",
+        "z": "29570d1df94e2809",
+        "g": "75a89d90fbde1f95",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
