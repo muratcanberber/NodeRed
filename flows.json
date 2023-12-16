@@ -46,10 +46,26 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 180,
+        "x": 420,
+        "y": 200,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "0320d1e565dddb08",
+        "type": "debug",
+        "z": "aecb097bb3b987bd",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 180,
+        "wires": []
     }
 ]
