@@ -46,53 +46,5 @@
         "order": -1,
         "disp": true,
         "className": ""
-    },
-    {
-        "id": "03c6ccf775385fc2",
-        "type": "inject",
-        "z": "e86c88acf9a21218",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 240,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "aff2814034311ef0",
-        "type": "ui-text",
-        "z": "e86c88acf9a21218",
-        "group": "1a5a9c046a57e75e",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "className": "",
-        "x": 470,
-        "y": 200,
-        "wires": []
     }
 ]
