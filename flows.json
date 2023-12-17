@@ -8,14 +8,6 @@
         "env": []
     },
     {
-        "id": "ae89a086db715ad8",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "75a89d90fbde1f95",
         "type": "group",
         "z": "29570d1df94e2809",
@@ -99,6 +91,71 @@
         "statusType": "auto",
         "x": 680,
         "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c7063273efd86de6",
+        "type": "inject",
+        "z": "29570d1df94e2809",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "4294597b3d34d0e5"
+            ]
+        ]
+    },
+    {
+        "id": "4294597b3d34d0e5",
+        "type": "function",
+        "z": "29570d1df94e2809",
+        "name": "function 2",
+        "func": "msg.payload = \"This is from TEST branch\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "b083cb4228e26be4"
+            ]
+        ]
+    },
+    {
+        "id": "b083cb4228e26be4",
+        "type": "debug",
+        "z": "29570d1df94e2809",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 360,
         "wires": []
     }
 ]
