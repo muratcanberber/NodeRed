@@ -1,6 +1,6 @@
 [
     {
-        "id": "e86c88acf9a21218",
+        "id": "29570d1df94e2809",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,43 +8,97 @@
         "env": []
     },
     {
-        "id": "9ee433b1c96b205d",
-        "type": "ui-base",
-        "name": "UI Name",
-        "path": "/dashboard"
+        "id": "ae89a086db715ad8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
     },
     {
-        "id": "cc30e29fd63521e4",
-        "type": "ui-theme",
-        "name": "Theme Name",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094ce",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        }
+        "id": "75a89d90fbde1f95",
+        "type": "group",
+        "z": "29570d1df94e2809",
+        "name": "TEST ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0b14e0c72fbd7234",
+            "4006801a25601f96",
+            "582a66c2d648e55c"
+        ],
+        "x": 154,
+        "y": 159,
+        "w": 632,
+        "h": 82
     },
     {
-        "id": "bf52462c76961dfe",
-        "type": "ui-page",
-        "name": "Page Name",
-        "ui": "9ee433b1c96b205d",
-        "path": "/",
-        "layout": "grid",
-        "theme": "cc30e29fd63521e4",
-        "order": -1,
-        "className": ""
+        "id": "0b14e0c72fbd7234",
+        "type": "inject",
+        "z": "29570d1df94e2809",
+        "g": "75a89d90fbde1f95",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 200,
+        "wires": [
+            [
+                "4006801a25601f96"
+            ]
+        ]
     },
     {
-        "id": "1a5a9c046a57e75e",
-        "type": "ui-group",
-        "name": "Group Name",
-        "page": "bf52462c76961dfe",
-        "width": "6",
-        "height": "1",
-        "order": -1,
-        "disp": true,
-        "className": ""
+        "id": "4006801a25601f96",
+        "type": "function",
+        "z": "29570d1df94e2809",
+        "g": "75a89d90fbde1f95",
+        "name": "function 1",
+        "func": "let arr = [\"\"];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "582a66c2d648e55c"
+            ]
+        ]
+    },
+    {
+        "id": "582a66c2d648e55c",
+        "type": "debug",
+        "z": "29570d1df94e2809",
+        "g": "75a89d90fbde1f95",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 200,
+        "wires": []
     }
 ]

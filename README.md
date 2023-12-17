@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 NewProject
 ==========
 
 test
+=======
+Test_Project
+============
+
+this is a test project
+>>>>>>> a49896284b6babea8a9bc1878c79c4b335741c62
 
 ### About
 

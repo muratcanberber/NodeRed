@@ -1,6 +1,6 @@
 {
-    "name": "NewProject",
-    "description": "test",
+    "name": "Test_Project",
+    "description": "this is a test project",
     "version": "0.0.1",
     "dependencies": {},
     "node-red": {
